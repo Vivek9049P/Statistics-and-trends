@@ -84,9 +84,9 @@ def writing(moments, col):
     return
 
 def main():
-    df = pd.read_csv('irish_animals.csv')
+    df = pd.read_csv('data.csv')
     df = preprocessing(df)
-    col = 'Size (max cm)'  # You can change this to another numerical column
+    col = 'Size (max cm)'  
     plot_relational_plot(df)
     plot_statistical_plot(df)
     plot_categorical_plot(df)
